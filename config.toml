@@ -1,16 +1,19 @@
-enable-magisk-update = false
+enable-magisk-update = true
 
-patches-source = "crimera/piko"
-integrations-source = "crimera/revanced-integrations"
-rv-brand = "Piko"
+patches-source = "anddea/revanced-patches"
+integrations-source = "anddea/revanced-integrations"
+cli-source = "inotia00/revanced-cli"
+rv-brand = "RVX-anddea"
 
-[Twitter-monet]
-build-mode = "apk"
-included-patches = "'Disable chirp font' 'Customize Navigation Bar items' 'Hide FAB' 'Bring back twitter' 'Add ability to copy media link' 'Remove premium upsell' 'Hide Community Notes' 'Force enable translate' 'Hide promote button' 'Delete from database' 'Control video auto scroll' 'Hide Banner'"
-archive-dlurl = "https://archive.org/download/jhc-apks/apks/com.twitter.android"
+patches-version = "v2.228.0-dev.11"
+integrations-version = "v0.155.0-dev.6"
 
-[Twitter]
-build-mode = "apk"
-excluded-patches = "'Dynamic color'"
-included-patches = "'Disable chirp font' 'Customize Navigation Bar items' 'Hide FAB' 'Bring back twitter' 'Add ability to copy media link' 'Remove premium upsell' 'Hide Community Notes' 'Force enable translate' 'Hide promote button' 'Delete from database' 'Control video auto scroll' 'Hide Banner'"
-archive-dlurl = "https://archive.org/download/jhc-apks/apks/com.twitter.android"
+[YouTube]
+included-patches = "'Custom branding icon for YouTube' 'MaterialYou'"
+apkmirror-dlurl = "https://apkmirror.com/apk/google-inc/youtube/"
+
+[Music]
+excluded-patches = "'Enable Cairo splash animation'"
+included-patches = "'Custom branding icon for YouTube Music' 'Custom header for YouTube Music'"
+apkmirror-dlurl = "https://apkmirror.com/apk/google-inc/youtube-music/"
+arch = "arm64-v8a"
